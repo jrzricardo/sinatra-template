@@ -1,11 +1,11 @@
-# Random Raccoon Generator
+# The Dog House
 
-  This simple web app will generate a random image of a dog. It uses the DOG_API to fetch the images and displays them in an easy viewing interface.
+  This simple web app will generate a random image of a dog along with the name of the breed. It uses the dog.ceo's DOG API to fetch the images and displays them in an easy viewing interface.
 
 ## HOW TO USE ##
 
   1. Open the app.
-  2. Click the "Generate Dog" button, to fetch and display a random image of a dog. 
+  2. Click the "Fetch" button, to fetch and display a random image of a dog. 
 
   ## TECH USED ##
 
@@ -13,4 +13,4 @@
 - Sinatra
 - HTML
 - CSS
-- The Cat API
+- DOG API

@@ -1,0 +1,11 @@
+<div class="container">
+  <h1><%= @clean_dog_name %></h1>
+  <div class="image-container">
+    <% if @dog_link %>
+      <img src="<%= @dog_link %>" alt="Random Dog">
+    <% end %>
+  </div>
+  <form action="/fetch_dog" method="post">
+    <button type="submit">Fetch New Breed</button>
+  </form>
+</div>

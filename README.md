@@ -1,18 +1,16 @@
-# sinatra-template
+# Random Raccoon Generator
 
-Use this repository to create new Sinatra apps. 
+  This simple web app will generate a random image of a dog. It uses the DOG_API to fetch the images and displays them in an easy viewing interface.
 
-Optionally, to use `ActiveRecord` for database operations, add to the `app.rb`:
+## HOW TO USE ##
 
-```ruby
-require "sinatra/activerecord"
-```
+  1. Open the app.
+  2. Click the "Generate Dog" button, to fetch and display a random image of a dog. 
 
-And in the `config/environment.rb` file add this code block:
+  ## TECH USED ##
 
-```ruby
-configure do
-  # setup a database connection
-  set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
-end
-```
+- Ruby
+- Sinatra
+- HTML
+- CSS
+- The Cat API

@@ -1,11 +1,17 @@
 <div class="container">
-  <h1><%= @clean_dog_name %></h1>
+  <h1>
+  <% if @dog_order.count == 2 %>
+    <%= "#{@breed} #{@type}" %>
+  <% else %>
+    <%= "#{@dog_name}" %>
+  <% end %>
+  </h1>
   <div class="image-container">
     <% if @dog_link %>
       <img src="<%= @dog_link %>" alt="Random Dog">
     <% end %>
   </div>
   <form action="/fetch_dog" method="post">
-    <button type="submit">Fetch New Breed</button>
+    <button type="submit">Fetch</button>
   </form>
 </div>

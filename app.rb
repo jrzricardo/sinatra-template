@@ -16,8 +16,16 @@ post("/fetch_dog") do
 
   @dog_link_array = @dog_link.split("/")
 
-  @dog_name = @dog_link_array.at(4)
+  @dog_name = @dog_link_array.at(4).upcase
   
-  @clean_dog_name = @dog_name.capitalize.gsub("-", " ")
+  @dog_sub = @dog_name.gsub("-", " ")
+
+  @dog_order = @dog_sub.split(" ")
+
+  @breed = @dog_order.at(1)
+  @type =  @dog_order.at(0)
+
+
+
   erb(:fetch_dog)
 end
